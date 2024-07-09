@@ -1,0 +1,11 @@
+# yolov8.yaml
+data: ./data  # 数据集路径
+train: ./data/train.txt  # 训练数据列表文件路径
+valid: ./data/valid.txt  # 验证数据列表文件路径
+names: ./data/names.txt  # 类别列表文件路径，每行一个类别名
+model: ./models/yolov8.pt  # 模型保存路径
+epochs: 100  # 训练轮数
+batch: 16  # 批处理大小
+img: 640  # 输入图片大小（宽）
+conf: 0.25  # 置信度阈值（用于非极大值抑制）
+iou: 0.5  # IoU 阈值（用于非极大值抑制）
